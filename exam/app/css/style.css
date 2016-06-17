@@ -113,7 +113,7 @@ table {
       color: #fff;
       cursor: pointer; }
   .main {
-    height: 1385px;
+    height: auto;
     width: auto; }
     .main__carousels {
       height: 820px;
