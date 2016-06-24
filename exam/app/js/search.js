@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+$.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
 	{
 		tags: "",
 		tagmode: "any",
@@ -18,7 +18,7 @@ $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?
   
    $("form").submit(function (event) {
    $(".isotope").empty();
-     $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+     $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
 	{
 		tags: $("#searchterm").val(),
 		tagmode: "any",
