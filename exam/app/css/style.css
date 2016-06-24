@@ -274,11 +274,21 @@ table {
   .searching {
     height: auto;
     text-align: center; }
+    .searching .isotope {
+      width: 320px;
+      overflow: hidden; }
+      .searching .isotope .item {
+        width: 320px;
+        margin-bottom: 10px; }
+        .searching .isotope .item img {
+          width: 320px;
+          border-radius: 5px; }
     .searching__header1 {
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
       font-size: 140%;
-      color: #333333; }
+      color: #333333;
+      margin: 25px 0; }
     .searching__header2 {
       display: block;
       margin-top: 40px;
@@ -301,7 +311,7 @@ table {
       .searching__form--input {
         margin-bottom: 10px;
         margin-top: 20px;
-        width: 280px;
+        width: 255px;
         height: 40px;
         padding-left: 25px;
         border-radius: 5px;
@@ -611,6 +621,16 @@ table {
   .searching {
     height: auto;
     text-align: center; }
+    .searching .isotope {
+      max-width: 768px;
+      overflow: hidden; }
+      .searching .isotope .item {
+        height: 200px;
+        display: inline-block;
+        margin: 10px; }
+        .searching .isotope .item img {
+          height: 200px;
+          border-radius: 5px; }
     .searching__header1 {
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
@@ -953,16 +973,24 @@ table {
       color: #ff4e50;
       cursor: pointer; }
   .searching {
-    height: 1382px;
+    height: auto;
     text-align: center; }
-    .searching__masonry {
+    .searching .isotope {
       width: 940px;
-      height: 1070px; }
+      overflow: hidden; }
+      .searching .isotope .item {
+        height: 200px;
+        display: inline-block;
+        margin: 10px; }
+        .searching .isotope .item img {
+          height: 200px;
+          border-radius: 5px; }
     .searching__header1 {
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
       font-size: 140%;
-      color: #333333; }
+      color: #333333;
+      margin-bottom: 25px; }
     .searching__header2 {
       display: block;
       margin-top: 40px;
@@ -1004,53 +1032,54 @@ table {
         font-weight: bold;
         font-size: 87.5%;
         color: #fff;
-        border: none; }
-  .footer {
-    height: 196px; }
-    .footer__textlogo {
+        border: none; } }
+
+.footer {
+  height: 196px; }
+  .footer__textlogo {
+    display: block;
+    margin-top: 40px;
+    width: 145px;
+    color: #ff4e50;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 100%; }
+  .footer__menu {
+    margin-left: 240px;
+    margin-top: 16px; }
+    .footer__menu--link {
       display: block;
-      margin-top: 40px;
-      width: 145px;
-      color: #ff4e50;
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      font-size: 100%; }
-    .footer__menu {
-      margin-left: 240px;
-      margin-top: 16px; }
-      .footer__menu--link {
-        display: block;
-        margin-bottom: 10px;
-        text-decoration: none;
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        font-size: 87.5%;
-        color: #333333;
-        cursor: pointer; }
-    .footer__partner-link, .footer__company-link {
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      font-size: 87.5%; }
-    .footer__company-link {
-      display: block;
-      margin-left: 240px;
-      margin-top: -17px; }
-    .footer__partner-link {
-      display: block;
-      margin-left: 410px;
-      margin-top: -126px; }
-    .footer__created-span {
-      float: right;
-      display: block;
-      margin-top: -12px;
-      color: #cccccc;
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      font-size: 64%;
-      letter-spacing: 0.1em; }
-    .footer__created-linklogo {
-      float: right;
-      margin-top: 7px; } }
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 87.5%;
+      color: #333333;
+      cursor: pointer; }
+  .footer__partner-link, .footer__company-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 87.5%; }
+  .footer__company-link {
+    display: block;
+    margin-left: 240px;
+    margin-top: -17px; }
+  .footer__partner-link {
+    display: block;
+    margin-left: 410px;
+    margin-top: -126px; }
+  .footer__created-span {
+    float: right;
+    display: block;
+    margin-top: -12px;
+    color: #cccccc;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 64%;
+    letter-spacing: 0.1em; }
+  .footer__created-linklogo {
+    float: right;
+    margin-top: 7px; }
 
 * {
   margin: 0;

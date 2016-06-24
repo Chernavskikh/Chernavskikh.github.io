@@ -292,6 +292,19 @@
 .searching{
 	height: auto;
 	text-align: center;
+	.isotope{
+		max-width: 768px;
+		overflow: hidden;
+		.item{
+			height: 200px;
+			display: inline-block;
+			margin:10px;
+			img{
+				height: 200px;
+				border-radius: 5px;
+			}
+		}
+	}
 	&__header1{
 		font-family: $montserrat;
 		font-weight: bold;

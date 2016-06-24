@@ -287,17 +287,27 @@
 		}
 }
 .searching{
-	height: 1382px;
+	height: auto;
 	text-align: center;
-	&__masonry{
+	.isotope{
 		width: 940px;
-		height: 1070px;
+		overflow: hidden;
+		.item{
+			height: 200px;
+			display: inline-block;
+			margin:10px;
+			img{
+				height: 200px;
+				border-radius: 5px;
+			}
+		}
 	}
 	&__header1{
 		font-family: $montserrat;
 		font-weight: bold;
 		font-size: 140%; 
 		color: #333333;
+		margin-bottom:25px;
 	}
 	&__header2{
 		display: block;
@@ -347,6 +357,7 @@
 			border:none;
 		}
 	}
+}
 }
 .footer{
 	height: 196px;
@@ -404,5 +415,5 @@
 			float: right;
 			margin-top: 7px;
 		}
-}
+
 }

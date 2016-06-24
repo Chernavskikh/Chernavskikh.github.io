@@ -1,10 +1,10 @@
+
 @media (min-width:320px) and (max-width:767px){
 .wrapper{
 	width: 320px;
 	height: auto;
 	margin: 0 auto;
 }
-
 .header{
 	width: auto;
 	height: 540px;
@@ -276,11 +276,24 @@
 .searching{
 	height: auto;
 	text-align: center;
+	.isotope{
+		width: 320px;
+		overflow: hidden;
+		.item{
+			width: 320px;
+			margin-bottom:10px;
+			img{
+				width: 320px;
+				border-radius: 5px;
+			}
+		}
+	}
 	&__header1{
 		font-family: $montserrat;
 		font-weight: bold;
 		font-size: 140%; 
 		color: #333333;
+		margin: 25px 0;
 	}
 	&__header2{
 		display: block;
@@ -307,7 +320,7 @@
 		&--input{
 			margin-bottom: 10px;
 			margin-top: 20px;
-			width: 280px;
+			width: 255px;
 			height: 40px;
 			padding-left: 25px;
 			border-radius:5px;
@@ -348,6 +361,7 @@
 			margin-top: 10px;
 			margin-bottom: 20px;
 			margin-left: 60px;
+
 			&--item{
 				float: left;
 			}
@@ -383,3 +397,4 @@
 
 }
 }
+

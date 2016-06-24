@@ -7,6 +7,7 @@ var prefix = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
+var image = require('gulp-image');
 
 //server connect
 gulp.task('connect', function() {
@@ -15,6 +16,13 @@ gulp.task('connect', function() {
   		livereload: true
   	});
 });
+//img
+gulp.task('image', function () {
+  gulp.src('./app/img/*')
+    .pipe(image())
+    .pipe(gulp.dest('./app/min'));
+});
+
 //html
 gulp.task('html', function() {
 	gulp.src('./app/index.html')

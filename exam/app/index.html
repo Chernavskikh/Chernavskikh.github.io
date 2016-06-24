@@ -24,7 +24,7 @@
 <div class="wrapper">
 <!--HEADER-->
 <header class="header">
-	<a class= "header__logotext" href="#">URLAUBSGLÜCK</a>
+	<a class= "header__logotext" href="">URLAUBSGLÜCK</a>
 
 	<form class="header__form">
 		<input class="header__form--login" type="button" value="Log In">
@@ -62,8 +62,8 @@
                     </ul>
                 </div>
 
-                <a href="#" class="jcarousel-control-prev"></a>
-                <a href="#" class="jcarousel-control-next"></a>
+                <a href="" class="jcarousel-control-prev"></a>
+                <a href="" class="jcarousel-control-next"></a>
             </div>
 
         <div class="jcarousel-wrapper slider2">
@@ -89,8 +89,8 @@
                     </ul>
                 </div>
 
-                <a href="#" class="jcarousel-control-prev"></a>
-                <a href="#" class="jcarousel-control-next"></a>
+                <a href="" class="jcarousel-control-prev"></a>
+                <a href="" class="jcarousel-control-next"></a>
             </div>
 
         <div class="jcarousel-wrapper slider3">
@@ -116,8 +116,8 @@
                     </ul>
                 </div>
 
-                <a href="#" class="jcarousel-control-prev"></a>
-                <a href="#" class="jcarousel-control-next"></a>
+                <a href="" class="jcarousel-control-prev"></a>
+                <a href="" class="jcarousel-control-next"></a>
             </div>
 
 	</section>
@@ -155,17 +155,19 @@
 	<button class="partners__button"> See other partners </button>
 </section>
 </main>
+
+<!--SEARCH-->
 <div class="searching">
 	<h3 class="searching__header1">Discover holiday activity ideas</h3>
-	<div class="searching__masonry"></div>
-
+    <div class="isotope searching__isotope"></div>
 	<h3 class="searching__header2">Discover holiday activity ideas</h3>
 		<span class="searching__answer">Hi! What are your holiday interests?</span>
 			<form action="" class="searching__form">
-				<input type="search" placeholder="Enter your interests" class="searching__form--input">
-				<input type="submit" value="Search partners" class="searching__form--submit">
+				<input type="text" id="searchterm" placeholder="Enter your interests" class="searching__form--input">
+				<input type="submit" id="search" value="Search partners" class="searching__form--submit">
 			</form>
 </div>
+
 <!--FOOTER-->
 <footer class="footer">
 	<span class="footer__textlogo">URLAUBSGLÜCK</span>
@@ -178,6 +180,7 @@
 		<li class="footer__menu--item"><a href="" class="footer__menu--link">Press</a></li>
 		<li class="footer__menu--item"><a href="" class="footer__menu--link">Blog</a></li>
 	</ul>
+
 	<span class="footer__partner-link">Partners</span>
 
 	<div class="footer__created-block">
@@ -192,6 +195,9 @@
 </body>
 	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/jcarousel.basic.js"></script>
+    <script src="js/search.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
 
 </html>
 
