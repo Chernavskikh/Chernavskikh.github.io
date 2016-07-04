@@ -1,4 +1,4 @@
-@media (min-width: 940px){
+@media (min-width: 940px) and (max-width:1440px){
 .header-bg1440{
 	position: absolute;
 	top:0;
@@ -109,18 +109,21 @@
 					text-align: center;
 				}
 						.slide1-item1{
+							position: relative;
 							height: 400px;
 							width: 300px;
 							background-image: url('../img/1step1440.jpg');
 							background-repeat: no-repeat;
 						}
 						.slide1-item2{
+							position: relative;
 							height: 400px;
 							width: 300px;
 							background-image: url('../img/2step1440.jpg');
 							background-repeat: no-repeat;
 						}
 						.slide1-item3{
+							position: relative;
 							height: 400px;
 							width: 300px;
 							background-image: url('../img/3step1440.jpg');
@@ -358,9 +361,9 @@
 		}
 	}
 }
-}
 .footer{
 	height: 196px;
+	width: 940px;
 		&__textlogo{
 			display: block;
 			margin-top: 40px;
@@ -415,5 +418,7 @@
 			float: right;
 			margin-top: 7px;
 		}
+
+}
 
 }

@@ -141,6 +141,7 @@
 	float:left;
 }
 .jcarousel-control-next,.jcarousel-control-prev {
+	display: none;
 	position:absolute;
 	top:10px;
 	width:30px;
@@ -376,6 +377,9 @@
 				color: #333333;
 				cursor: pointer;
 			}
+
+		}
+		&__partner-link{
 
 		}
 		&__partner-link,&__company-link{

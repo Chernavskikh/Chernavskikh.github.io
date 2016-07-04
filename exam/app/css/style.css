@@ -161,6 +161,7 @@ table {
   .jcarousel li {
     float: left; }
   .jcarousel-control-next, .jcarousel-control-prev {
+    display: none;
     position: absolute;
     top: 10px;
     width: 30px;
@@ -465,16 +466,19 @@ table {
         color: #333333;
         text-align: center; }
       .main__carousels .slide1-item1 {
+        position: relative;
         height: 400px;
         width: 237px;
         background-image: url("../img/1step768.jpg");
         background-repeat: no-repeat; }
       .main__carousels .slide1-item2 {
+        position: relative;
         height: 400px;
         width: 237px;
         background-image: url("../img/2step768.jpg");
         background-repeat: no-repeat; }
       .main__carousels .slide1-item3 {
+        position: relative;
         height: 400px;
         width: 237px;
         background-image: url("../img/3step768.jpg");
@@ -729,7 +733,7 @@ table {
       margin-top: 7px;
       margin-right: 100px; } }
 
-@media (min-width: 940px) {
+@media (min-width: 940px) and (max-width: 1440px) {
   .header-bg1440 {
     position: absolute;
     top: 0;
@@ -825,16 +829,19 @@ table {
         color: #333333;
         text-align: center; }
       .main__carousels .slide1-item1 {
+        position: relative;
         height: 400px;
         width: 300px;
         background-image: url("../img/1step1440.jpg");
         background-repeat: no-repeat; }
       .main__carousels .slide1-item2 {
+        position: relative;
         height: 400px;
         width: 300px;
         background-image: url("../img/2step1440.jpg");
         background-repeat: no-repeat; }
       .main__carousels .slide1-item3 {
+        position: relative;
         height: 400px;
         width: 300px;
         background-image: url("../img/3step1440.jpg");
@@ -1032,54 +1039,54 @@ table {
         font-weight: bold;
         font-size: 87.5%;
         color: #fff;
-        border: none; } }
-
-.footer {
-  height: 196px; }
-  .footer__textlogo {
-    display: block;
-    margin-top: 40px;
-    width: 145px;
-    color: #ff4e50;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 100%; }
-  .footer__menu {
-    margin-left: 240px;
-    margin-top: 16px; }
-    .footer__menu--link {
+        border: none; }
+  .footer {
+    height: 196px;
+    width: 940px; }
+    .footer__textlogo {
       display: block;
-      margin-bottom: 10px;
-      text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 300;
-      font-size: 87.5%;
-      color: #333333;
-      cursor: pointer; }
-  .footer__partner-link, .footer__company-link {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 87.5%; }
-  .footer__company-link {
-    display: block;
-    margin-left: 240px;
-    margin-top: -17px; }
-  .footer__partner-link {
-    display: block;
-    margin-left: 410px;
-    margin-top: -126px; }
-  .footer__created-span {
-    float: right;
-    display: block;
-    margin-top: -12px;
-    color: #cccccc;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 64%;
-    letter-spacing: 0.1em; }
-  .footer__created-linklogo {
-    float: right;
-    margin-top: 7px; }
+      margin-top: 40px;
+      width: 145px;
+      color: #ff4e50;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 100%; }
+    .footer__menu {
+      margin-left: 240px;
+      margin-top: 16px; }
+      .footer__menu--link {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 87.5%;
+        color: #333333;
+        cursor: pointer; }
+    .footer__partner-link, .footer__company-link {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 87.5%; }
+    .footer__company-link {
+      display: block;
+      margin-left: 240px;
+      margin-top: -17px; }
+    .footer__partner-link {
+      display: block;
+      margin-left: 410px;
+      margin-top: -126px; }
+    .footer__created-span {
+      float: right;
+      display: block;
+      margin-top: -12px;
+      color: #cccccc;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 64%;
+      letter-spacing: 0.1em; }
+    .footer__created-linklogo {
+      float: right;
+      margin-top: 7px; } }
 
 * {
   margin: 0;
