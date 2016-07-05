@@ -41,7 +41,7 @@
       width: 15px;
       height: 0;
       padding-top: 15px;
-      background-image: url(img/paginator-off.png);
+      background-image: url(../img/paginator-off.png);
       background-position: 0 0;
       float: left;
       overflow: hidden;
@@ -49,7 +49,7 @@
 
     .slidesjs-pagination li a.active,
     .slidesjs-pagination li a:hover.active {
-      background-image: url(img/paginator-on.png);
+      background-image: url(../img/paginator-on.png);
     }
     
     #slides a:link,
