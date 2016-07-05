@@ -4,7 +4,7 @@ var cssmin = require('gulp-cssmin');//минификатор
 var rename = require('gulp-rename');//переименовать в min.css
 var notify = require('gulp-notify');//уведомления в панельке
 var prefix = require('gulp-autoprefixer');
-var livereload = require('gulp-livereload');
+var livereload = require('gulp-livereload');//сервер
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 
