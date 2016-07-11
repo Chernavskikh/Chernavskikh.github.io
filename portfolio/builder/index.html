@@ -20,12 +20,8 @@
 </head>
 
 <body>
-<!--Backgrounds-->
-<div class="servises-bg"></div>
-<div class="news-bg"></div>
-<div class="footer-bg"></div>
-<div class="footer2-bg"></div>
-<header>
+<!--HEADER START-->
+<header class="content-w1160">
 		<img class="header__logo" src="img/logo.jpg" alt="logo">
 		<ul class="header__soc-section">
 			<li class="header__soc-section--elem"><a class="header__soc-section--fb-link" href="#"></a></li>
@@ -46,20 +42,21 @@
 			<input class="header__nav__search" type="text" placeholder="Search...">
 		</nav>
 </header>
+<!--HEADER END-->
 
-
- <section class="box">
-   <!-- SLIDER START -->
-    <div class="container">
-    <div id="slides">
-  <img src="img/slider1.jpg">
-  <img src="img/slider2.jpg">
-  <img src="img/slider3.jpg">
-      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
-      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
-    </div>
-  </div>
-<!-- SLIDER END -->
+<!--BOX SECTION START-->
+ <section class="box content-w1160">
+			<!-- SLIDER START -->
+			    <div class="container">
+			    <div id="slides">
+			  		<img src="img/slider1.jpg">
+			  		<img src="img/slider2.jpg">
+			  		<img src="img/slider3.jpg">
+			      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+			      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+			    </div>
+			  </div>
+		<!-- SLIDER END -->
 
 	<section class="main-content__articles">
 			<article class="content__article">
@@ -87,9 +84,11 @@
 			</article>
 	</section>
 </section> 
-    <!-- Main -->
+<!--BOX SECTION END-->
+<!-- MAIN CONTENT START -->
 <main class="main-content">
-	<nav class="services-nav">
+	<div class="servises-bg">
+	<nav class="services-nav content-w1160">
 			<h3 class="services-nav__header">Our Services</h3>
 			<figure class="services-nav__fig">
 				<img class="services-nav__fig--img" src="img/block1.jpg" alt="">
@@ -109,13 +108,15 @@
 				<div class="services-nav__fig--effect"></div>
 			</figure>
 
-			<figure class="services-nav__fig">
+			<figure class="services-nav__fig clear-fig">
 				<img class="services-nav__fig--img" src="img/block4.jpg" alt="">
 				<figcaption class="services-nav__fig--text">Repair Services</figcaption>
 				<div class="services-nav__fig--effect"></div>
 			</figure>
 	</nav>
-	
+	</div>
+	<div class="news-bg">
+	<div class="content-w1160">
 	<section class="news-block">
 		<h3 class="news-block__header">Latest News</h3>
 			<article class="news-block__article">
@@ -137,7 +138,6 @@
 				<p class="news-block__article--text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
 			</article>
 	</section>
-
 	<aside class="banners">
 		<h3 class=banners__header>Banners Place</h3>
 		<div class="banners__accordion">
@@ -160,13 +160,19 @@
 			</dl>		
 		</div>
 	</aside>
-
-
+	</div>
+	</div>
 </main>
+<!-- MAIN CONTENT END-->
 
+<!-- LOGOS START-->
 <div class="logos"></div>
+<!-- LOGOS END-->
 
+<!-- FOOTER START-->
 <footer class="footer">
+<div class="footer-bg">
+<div class=" content-w1160">
 	<ul class="footer__nav">
 		<li class="footer__nav--header">SOCIALS</li>
 		<li class="footer__nav--item"><a href="#" class="footer__nav--link">Facebook</a></li>
@@ -188,20 +194,25 @@
 		<li class="footer__nav--item"><a href="#" class="footer__nav--link">Blog Free</a></li>
 		<li class="footer__nav--item"><a href="#" class="footer__nav--link">Wordpress Blog</a></li>
 	</ul>
-	<ul class="footer__nav">
+	<ul class="footer__nav last-footer-nav">
 		<li class="footer__nav--header">ABOUT US</li>
 		<li class="footer__nav--item"><a href="#" class="footer__nav--link">Agriculture</a></li>
 		<li class="footer__nav--item"><a href="#" class="footer__nav--link">Harvest</a></li>
 		<li class="footer__nav--item"><a href="#" class="footer__nav--link">Company news</a></li>
 		<li class="footer__nav--item"><a href="#" class="footer__nav--link no">Investor relations</a></li>
 	</ul>
-<address class="footer__adress">
+</div>
+</div>
+
+<div class="footer2-bg">
+<address class="footer__adress content-w1160">
 	<p class="footer__adress--city">BuildHomeLtd.  Street Name 123   23 45 Cityname</p>
 	<a class="footer__adress--tel" href="tel:+123900123456">+123 900 123 456</a>
 	<a class="footer__adress--mail" href="mailto:info@buildhome.web">info@buildhome.web</a>
 </address>
+</div>
 </footer>
-
+<!-- FOOTER END-->
 
 <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
   <script>
