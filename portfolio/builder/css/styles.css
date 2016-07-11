@@ -1,32 +1,19 @@
-.content-w1160 {
-    width: 1160px;
-    margin: 0 auto;
-}
-.content-w1200 {
-    width: 1200px;
-    margin: 0 auto;
-}
-.bg-width {
-    width: 100%;
-}
-.servises-bg {
-    height: 505px;
-    width: 100%;
-    background-color: #2a2d32;
-}
-.news-bg {
-    height: 540px;
-    width: 100%;
-    background-color: #f7f7f7;
-}
 
 * {
     margin: 0;
     padding: 0;
 }
+html{
+    min-width: 1240px;
+}
 body {
     margin: 0 auto;
 }
+.content-w1160 {
+    width: 1160px;
+    margin: 0 auto;
+}
+/*HEADER START*/
 header {
     padding: 38px 0px;
     margin: 0 auto;
@@ -124,7 +111,9 @@ header {
     color: #5c5e61;
     font-family: "Arial";
 }
-.main-content__articles {
+/*HEADER END*/
+/*BOX START*/
+.box-content__articles {
     width: 1200px;
     height: 340px;
 }
@@ -190,13 +179,15 @@ header {
 .content__article--readmore:hover {
     color: #248cec;
 }
+/*BOX END*/
 /*MAIN_CONTENT START*/
-.main-content {
-    position: relative;
-    overflow: hidden;
-}
 .services-nav {
     height: 505px;
+}
+.servises-bg {
+    height: 505px;
+    width: 100%;
+    background-color: #2a2d32;
 }
 .services-nav__header {
     font-family: "Ubuntu";
@@ -240,6 +231,11 @@ header {
 }
 .services-nav__fig:hover .services-nav__fig--effect {
     opacity: 1;
+}
+.news-bg {
+    height: 540px;
+    width: 100%;
+    background-color: #f7f7f7;
 }
 .news-block {
     width: 570px;
@@ -381,10 +377,11 @@ header {
 /*LOGOS START*/
 .logos {
     height: 250px;
-    width: 100%;
+    width: 1000px;
     background-image: url("../img/logotips.png");
     background-repeat: no-repeat;
-    background-position: 95px 110px;
+    background-position: 0 center;
+    margin:0 auto;
 }
 /*LOGOS END*/
 /*FOOTER START*/
@@ -399,7 +396,6 @@ header {
     background-color: #35383c;
 }
 .footer {
-    position: relative;
     height: 390px;
 }
 .footer__nav {
