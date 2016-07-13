@@ -18,9 +18,29 @@
 header{
   height: 150px;
   margin-bottom: 50px;
-  background:url('./img/header.jpg');
-  background-position: center;
+  background-color: #1d043c;
+  color: #fff;
+  padding: 20px 40px;
 }
+.wrapper{
+  width: 1300px;
+  overflow: auto;
+  margin:0 auto 70px; 
+  text-align: center;
+} 
+.name{
+  text-transform: uppercase;
+  font: 700 20px Raleway, sans-serif;
+}
+
+ .contacts,.mail,.git{
+  display: block;
+  font: 700 16px sans-serif;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
 
 h1{
   font: 700 40px/1.2 Raleway, sans-serif;
@@ -36,14 +56,13 @@ h2{
 
 figure {
   position: relative;
-  float: left;
+  display: inline-block;
   overflow: hidden;
   margin: 10px 1%;
   width: 400px;
   height: 250px;
   background: #3085a3;
   text-align: center;
-  cursor: pointer;
 }
 
 figure img {
@@ -77,14 +96,20 @@ figure figcaption > a {
   height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-figure figcaption > a {
+.link,.download {
   z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
+  font-size: 12px;
+  opacity: 1;
+  color: #fff;
+  width: auto;
+  text-decoration: none;
+}
+
+.download{
+  float: left; 
+}
+.link{
+  float: right;
 }
 
 figure h2 {
@@ -111,7 +136,7 @@ figure p {
 /*---------------*/
 
 figure.effect-bubba {
-  background: #9e5406;
+  background: #8a59d1;
 }
 
 figure.effect-bubba img {
@@ -182,61 +207,89 @@ figure.effect-bubba:hover p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-.wrapper{
-  width: 1280px;
-  height: 500px;
-  margin:0 auto;
+footer{
+  height: 30px;
+  background-color: #1d043c;
 }
   </style>
+
 
 
 </head>
 
 <body>
 <header>
-<h2>Alina Chernavskikh</h2>
+<h2 class="name">Alina Chernavskikh</h2>
+  <p class="contacts">tel: +38-050-021-9661</p>
+  <p class="mail">alina.chernavskikh@gmail.com</p>
+  <a class="git" href="https://github.com/alinkkkos" target="_blank">github.com/alinkkkos</a>
+
 </header>
 <h1 align="center">Portfolio Wall</h1>
 <div class="wrapper">
 
 <figure class="effect-bubba">
-  <img src="img/urlaub.png" alt="site screen"/>
+  <img src="img/urlaub.jpg" alt="site screen"/>
       <figcaption>
-        <h2><span>URLAUB</span></h2>
-          <p>Responsive/BEM/Pixel perfect/SASS</p>
-            <a href="https://alinkkkos.github.io/exam/app"  target="_blank"></a>
-            <p><a class="download" href="download/urlaub.zip" download>Скачать файл</a>
+        <h2><span>URLAUBSGLUCK</span></h2>
+          <p>Responsive/BEM/Pixel perfect/SASS/AJAX</p>
+            <p><a class="download" href="download/urlaub.zip" download>Download png</a>
+                <a class="link" href="https://alinkkkos.github.io/exam/app"  target="_blank">go on page</a></p>
       </figcaption>     
 </figure>
 
 <figure class="effect-bubba">
-  <img src="img/Home_960px.png" alt="site screen"/>
+  <img src="img/builder.jpg" alt="site screen"/>
+      <figcaption>
+        <h2><span>BUILDER</span></h2>
+          <p>BEM/JQUERY/SASS</p>
+          <p><a class="download" href="download/builder.png" download>Download png</a>
+              <a class="link" href="https://alinkkkos.github.io/portfolio/builder"  target="_blank">go on page</a></p>
+      </figcaption>     
+</figure>
+
+<figure class="effect-bubba">
+  <img src="img/Home_960px.jpg" alt="site screen"/>
       <figcaption>
         <h2><span>PINGBULLER</span></h2>
           <p>Responsive/BEM/Pixel perfect</p>
-          <p><a class="download" href="download/pingbuller.zip" download>Скачать файл</a>
-          <a href="https://alinkkkos.github.io/portfolio/pingbuller"  target="_blank"></a>
-      </figcaption>     
-</figure>
-
-<figure class="effect-bubba">
-  <img src="img/builder.png" alt="site screen"/>
-      <figcaption>
-        <h2><span>BUILDER</span></h2>
-          <p>BEM/JQUERY</p>
-           <a href="https://alinkkkos.github.io/portfolio/builder"  target="_blank"></a>
+          <p><a class="download" href="download/pingbuller.zip" download>Download png</a>
+            <a class="link" href="https://alinkkkos.github.io/portfolio/pingbuller"  target="_blank">go on page</a></p>
       </figcaption>     
 </figure>
 
 
 <figure class="effect-bubba">
-  <img src="Home_960px.png" alt="img01"/>
+  <img src="img/asia.jpg" alt="site screen"/>
       <figcaption>
-        <h2>Crazy <span>Shark</span></h2>
-          <p>Lily likes to play with crayons and pencils</p>
+        <h2><span>ASIA-HOLIDAYS</span></h2>
+          <p>one of my first works</p>
+          <p><a class="download" href="download/asia.png" download>Download png</a>
+            <a class="link" href="https://alinkkkos.github.io/portfolio/asia-holidays"  target="_blank">go on page</a></p>
       </figcaption>     
 </figure>
+<!--
+<figure class="effect-bubba">
+  <img src="img/soon.jpg" width:"400" alt="site screen"/>
+      <figcaption>
+        <h2><span>NO NAME</span></h2>
+          <p></p>
+          <p><a class="download" href="" download>Download png</a>
+            <a class="link" href=""  target="_blank">go on page</a></p>
+      </figcaption>     
+</figure>
+
+<figure class="effect-bubba">
+  <img src="" alt="site screen"/>
+      <figcaption>
+        <h2><span>NO NAME</span></h2>
+          <p></p>
+          <p><a class="download" href="" download>Download png</a>
+            <a class="link" href=""  target="_blank">go on page</a></p>
+      </figcaption>     
+</figure>
+-->
 </div>
-
+<footer></footer>
 </body>
 </html>

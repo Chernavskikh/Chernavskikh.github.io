@@ -72,9 +72,9 @@
 	font-size: 10px;
 }
 .main-image{
-	background-image: url(img/main-img.png);
-	background-position: -88px 240px;
-	height: 240px;
+	background-image: url(img/main.jpg);
+	background-position: cover;
+	height: 235px;
 	border-bottom:1px solid #009999;/*рамка под картинкой*/
 	margin-left: 9px;
 	margin-right:9px;
