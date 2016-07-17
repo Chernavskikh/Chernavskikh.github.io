@@ -477,8 +477,8 @@ section.news-section article a {
   }
 
   header .header-main-nav a {
-    color: #3b401e;
     padding: 0 10px;
+    color: #3b401e;
   }
 }
 
@@ -502,8 +502,8 @@ section.news-section article a {
   }
 
   .header-bg header a {
-    color: #3b401e;
     padding: 0 15px;
+    color: #3b401e;
   }
 
   .news-section img {
@@ -521,23 +521,36 @@ section.news-section article a {
 @media (max-width: 767px) {
   .content-width {
     width: 320px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
   .header-bg {
-    height: 280px;
+    height: 600px;
   }
 
   .header-bg .col-xs-12 {
     text-align: center;
   }
 
+  header {
+    padding: 18px;
+  }
+
   header .logo img {
     position: inherit;
   }
 
+  header .header-main-nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4ded1;
+  }
+
   header .header-main-nav a {
+    float: none;
+    padding: 0;
     font-size: 18px;
-    padding: 0 6px;
+    border: none;
   }
 
   header .header-second-nav {
@@ -545,7 +558,15 @@ section.news-section article a {
   }
 
   header .header-second-nav a {
+    float: none;
+    display: block;
+    padding: 15px 0;
     font-size: 15px;
+    border: none;
+  }
+
+  header .header-second-nav a:last-child {
+    padding-right: 0px;
   }
 
   header .navbar-form {
@@ -553,10 +574,23 @@ section.news-section article a {
   }
 
   header .navbar-form .input-group {
-    padding: 15px 35px;
+    padding: 10px 35px;
   }
 
   .main-section {
-    padding: 0;
+    padding: 0 15px;
+  }
+
+  .main-section .info-poster {
+    padding: 15px;
+  }
+
+  .main-section .info-poster h1 {
+    font-size: 35px;
+    padding-top: 55px;
+  }
+
+  .main-section .info-poster p {
+    width: 100%;
   }
 }

@@ -312,8 +312,8 @@ section.news-section article {
     header .header-main-nav {
       padding-left: 25px; }
       header .header-main-nav a {
-        color: #3b401e;
-        padding: 0 10px; } }
+        padding: 0 10px;
+        color: #3b401e; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .content-width {
@@ -326,8 +326,8 @@ section.news-section article {
     .header-bg header .banner, .header-bg header .header-main-nav {
       padding-left: 15px; }
     .header-bg header a {
-      color: #3b401e;
-      padding: 0 15px; }
+      padding: 0 15px;
+      color: #3b401e; }
   .news-section img {
     margin-bottom: 100px; }
   .footer-wrapper footer .center-column-footer .first-center-list,
@@ -337,23 +337,44 @@ section.news-section article {
 /* Extra Small */
 @media (max-width: 767px) {
   .content-width {
-    width: 320px; }
+    width: 320px;
+    box-sizing: border-box; }
   .header-bg {
-    height: 280px; }
+    height: 600px; }
     .header-bg .col-xs-12 {
       text-align: center; }
-  header .logo img {
-    position: inherit; }
-  header .header-main-nav a {
-    font-size: 18px;
-    padding: 0 6px; }
-  header .header-second-nav {
-    float: none; }
-    header .header-second-nav a {
-      font-size: 15px; }
-  header .navbar-form {
-    float: none; }
-    header .navbar-form .input-group {
-      padding: 15px 35px; }
+  header {
+    padding: 18px; }
+    header .logo img {
+      position: inherit; }
+    header .header-main-nav {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e4ded1; }
+      header .header-main-nav a {
+        float: none;
+        padding: 0;
+        font-size: 18px;
+        border: none; }
+    header .header-second-nav {
+      float: none; }
+      header .header-second-nav a {
+        float: none;
+        display: block;
+        padding: 15px 0;
+        font-size: 15px;
+        border: none; }
+      header .header-second-nav a:last-child {
+        padding-right: 0px; }
+    header .navbar-form {
+      float: none; }
+      header .navbar-form .input-group {
+        padding: 10px 35px; }
   .main-section {
-    padding: 0; } }
+    padding: 0 15px; }
+    .main-section .info-poster {
+      padding: 15px; }
+      .main-section .info-poster h1 {
+        font-size: 35px;
+        padding-top: 55px; }
+      .main-section .info-poster p {
+        width: 100%; } }
