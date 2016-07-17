@@ -163,7 +163,7 @@ header .header-second-nav a:first-child {
 
 header .header-second-nav a:last-child {
   border-right: none;
-  padding-right: 15px;
+  padding-right: 0px;
 }
 
 header .navbar-form {
@@ -468,14 +468,6 @@ section.news-section article a {
     padding-top: 25px;
   }
 
-  header .banner-row .banner {
-    padding-left: 25px;
-  }
-
-  header .header-main-nav {
-    padding-left: 25px;
-  }
-
   header .header-main-nav a {
     padding: 0 10px;
     color: #3b401e;
@@ -484,35 +476,48 @@ section.news-section article a {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .content-width {
-    width: 750px;
+    width: 700px;
   }
 
   .header-bg {
-    padding-top: 25px;
     height: 210px;
+    padding-top: 25px;
   }
 
   .header-bg header .logo img {
     position: inherit;
   }
 
-  .header-bg header .banner,
-  .header-bg header .header-main-nav {
-    padding-left: 15px;
-  }
-
-  .header-bg header a {
-    padding: 0 15px;
+  .header-bg header .header-main-nav a {
+    padding: 0 10px;
     color: #3b401e;
   }
 
-  .news-section img {
+  .header-bg header .header-main-nav a:first-child {
+    padding-left: 0;
+  }
+
+  .header-bg header .header-main-nav a:last-child {
+    border-right: none;
+    padding-right: 0px;
+  }
+
+  .main-section .info-poster {
+    padding-top: 100px;
+  }
+
+  .main-section .info-poster p {
+    width: 400px;
+  }
+
+  .main-section .news-section article img {
     margin-bottom: 100px;
+    float: none;
   }
 
   .footer-wrapper footer .center-column-footer .first-center-list,
   .footer-wrapper footer .center-column-footer .second-center-list {
-    margin-right: 35px;
+    margin-right: 20px;
   }
 }
 
@@ -520,9 +525,7 @@ section.news-section article a {
 
 @media (max-width: 767px) {
   .content-width {
-    width: 320px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    width: 100%;
   }
 
   .header-bg {
@@ -592,5 +595,32 @@ section.news-section article a {
 
   .main-section .info-poster p {
     width: 100%;
+  }
+
+  .main-section aside {
+    text-align: center;
+    border-bottom: 1px solid #e4ded1;
+    padding-bottom: 35px;
+  }
+
+  .main-section aside h3 {
+    padding: 0;
+  }
+
+  .main-section aside a {
+    line-height: 2em;
+  }
+
+  .main-section .news-section h3 {
+    text-align: center;
+    padding: 0;
+  }
+
+  .main-section .news-section article {
+    padding-left: none !important;
+  }
+
+  .main-section .news-section article img {
+    margin: 0 10px 10px 0;
   }
 }

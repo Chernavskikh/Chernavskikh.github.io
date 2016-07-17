@@ -94,7 +94,7 @@ header .header-second-nav {
     padding-left: 0; }
   header .header-second-nav a:last-child {
     border-right: none;
-    padding-right: 15px; }
+    padding-right: 0px; }
 
 header .navbar-form {
   float: right;
@@ -307,38 +307,41 @@ section.news-section article {
     height: 140px; }
   header {
     padding-top: 25px; }
-    header .banner-row .banner {
-      padding-left: 25px; }
-    header .header-main-nav {
-      padding-left: 25px; }
-      header .header-main-nav a {
-        padding: 0 10px;
-        color: #3b401e; } }
+    header .header-main-nav a {
+      padding: 0 10px;
+      color: #3b401e; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .content-width {
-    width: 750px; }
+    width: 700px; }
   .header-bg {
-    padding-top: 25px;
-    height: 210px; }
+    height: 210px;
+    padding-top: 25px; }
     .header-bg header .logo img {
       position: inherit; }
-    .header-bg header .banner, .header-bg header .header-main-nav {
-      padding-left: 15px; }
-    .header-bg header a {
-      padding: 0 15px;
+    .header-bg header .header-main-nav a {
+      padding: 0 10px;
       color: #3b401e; }
-  .news-section img {
-    margin-bottom: 100px; }
+    .header-bg header .header-main-nav a:first-child {
+      padding-left: 0; }
+    .header-bg header .header-main-nav a:last-child {
+      border-right: none;
+      padding-right: 0px; }
+  .main-section .info-poster {
+    padding-top: 100px; }
+    .main-section .info-poster p {
+      width: 400px; }
+  .main-section .news-section article img {
+    margin-bottom: 100px;
+    float: none; }
   .footer-wrapper footer .center-column-footer .first-center-list,
   .footer-wrapper footer .center-column-footer .second-center-list {
-    margin-right: 35px; } }
+    margin-right: 20px; } }
 
 /* Extra Small */
 @media (max-width: 767px) {
   .content-width {
-    width: 320px;
-    box-sizing: border-box; }
+    width: 100%; }
   .header-bg {
     height: 600px; }
     .header-bg .col-xs-12 {
@@ -377,4 +380,19 @@ section.news-section article {
         font-size: 35px;
         padding-top: 55px; }
       .main-section .info-poster p {
-        width: 100%; } }
+        width: 100%; }
+    .main-section aside {
+      text-align: center;
+      border-bottom: 1px solid #e4ded1;
+      padding-bottom: 35px; }
+      .main-section aside h3 {
+        padding: 0; }
+      .main-section aside a {
+        line-height: 2em; }
+    .main-section .news-section h3 {
+      text-align: center;
+      padding: 0; }
+    .main-section .news-section article {
+      padding-left: none !important; }
+      .main-section .news-section article img {
+        margin: 0 10px 10px 0; } }
