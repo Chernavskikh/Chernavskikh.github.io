@@ -61,6 +61,8 @@ header .banner-row {
     font-family: "Proxima Nova-Semibold", sans-serif;
     font-size: 11px;
     color: #c4b07a; }
+    header .banner-row .banner img {
+      margin-right: 15px; }
 
 header .header-main-nav a {
   display: block;
@@ -68,7 +70,7 @@ header .header-main-nav a {
   font-family: "Proxima Nova-Semibold", sans-serif;
   font-size: 16px;
   color: #3b401e;
-  padding: 0 23px;
+  padding: 0 18px;
   border-right: 1px solid #757f3c;
   line-height: 1em;
   margin-top: 25px; }
@@ -170,7 +172,7 @@ aside ul {
       font-family: "Proxima Nova-Bold", sans-serif;
       font-size: 14px;
       color: #4a4f2a;
-      line-height: 1.5em; }
+      line-height: 2em; }
 
 aside .mail-form {
   width: 165px; }
@@ -179,19 +181,22 @@ aside .mail-form {
     outline: 0;
     box-shadow: none;
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.075); }
+  aside .mail-form .input-group {
+    width: 100%;
+    min-width: 170px; }
   aside .mail-form #mail-box {
-    width: 150px;
-    background-color: #f3efe4;
-    border: none;
-    border-radius: 6px 0 0 6px;
+    min-width: 135px;
+    height: 37px;
     font-family: "Georgia";
     font-style: italic;
     color: #757f3c;
-    height: 37px; }
-  aside .mail-form #mail-btn {
     background-color: #f3efe4;
     border: none;
+    border-radius: 6px 0 0 6px; }
+  aside .mail-form #mail-btn {
     height: 37px;
+    background-color: #f3efe4;
+    border: none;
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.075); }
 
 /*ASIDE END*/
@@ -273,7 +278,8 @@ section.news-section article {
       .footer-wrapper footer ul li a {
         font-family: "Proxima Nova-Regular", sans-serif;
         font-size: 14px;
-        color: #fff; }
+        color: #fff;
+        line-height: 1.5em; }
   .footer-wrapper footer .first-center-list,
   .footer-wrapper footer .second-center-list {
     float: left;
@@ -371,7 +377,9 @@ section.news-section article {
     header .navbar-form {
       float: none; }
       header .navbar-form .input-group {
-        padding: 10px 35px; }
+        width: 60%;
+        min-width: 320px;
+        margin: 0 auto; }
   .main-section {
     padding: 0 15px; }
     .main-section .info-poster {
@@ -389,10 +397,30 @@ section.news-section article {
         padding: 0; }
       .main-section aside a {
         line-height: 2em; }
+      .main-section aside .input-group {
+        width: 60%;
+        min-width: 320px;
+        margin: 0 auto; }
+      .main-section aside .mail-form {
+        width: 100%; }
     .main-section .news-section h3 {
       text-align: center;
       padding: 0; }
     .main-section .news-section article {
-      padding-left: none !important; }
+      padding-left: none !important;
+      padding-right: 15px !important; }
       .main-section .news-section article img {
-        margin: 0 10px 10px 0; } }
+        margin: 0 10px 10px 0 !important; }
+      .main-section .news-section article h2 {
+        font-size: 17px; }
+  .footer-wrapper {
+    height: 100%;
+    padding-bottom: 30px;
+    text-align: center; }
+    .footer-wrapper footer .first-center-list, .footer-wrapper footer .second-center-list {
+      float: inherit;
+      width: 100%; }
+    .footer-wrapper footer .footer-form .input-group {
+      width: 60%;
+      min-width: 320px;
+      margin: 0 auto; } }

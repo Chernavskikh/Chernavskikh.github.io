@@ -33,6 +33,9 @@ header{
                 font-family: $nova-semibold;
                 font-size: 11px;
                 color: #c4b07a;
+                img{
+                    margin-right: 15px;
+                }
             }
         }
         .header-main-nav{
@@ -41,7 +44,7 @@ header{
                 font-family: $nova-semibold;
                 font-size: 16px; 
                 color: #3b401e; 
-                padding: 0 23px;
+                padding: 0 18px;
                 border-right: 1px solid #757f3c;
                 line-height: 1em;
                 margin-top: 25px;
@@ -158,7 +161,7 @@ aside{
                 font-family:  $nova-bold;
                 font-size: 14px;
                 color: #4a4f2a;
-                line-height: 1.5em;
+                line-height: 2em;
                 }
             }
         }
@@ -170,20 +173,24 @@ aside{
                 box-shadow: none;
                 box-shadow:inset 0 1px 0 rgba(0,0,0,.075);
             }
+            .input-group{
+            width: 100%;
+            min-width: 170px;
+            }
             #mail-box {
-                width:150px;
-                background-color:#f3efe4;
-                border:none;
-                border-radius: 6px 0 0 6px;
+                min-width: 135px;
+                height: 37px;
                 font-family: "Georgia";
                 font-style: italic;
                 color: #757f3c;
-                height: 37px;
-            }
-            #mail-btn{
                 background-color:#f3efe4;
                 border:none;
+                border-radius: 6px 0 0 6px;                    
+            }
+            #mail-btn{
                 height: 37px;
+                background-color:#f3efe4;
+                border:none;               
                 box-shadow:inset 0 1px 0 rgba(0,0,0,.075);
             }
         }
@@ -284,6 +291,7 @@ section.news-section{
                     font-family: $nova-reg;
                     font-size: 14px;
                     color: #fff;
+                    line-height: 1.5em;
                 }
 
             }

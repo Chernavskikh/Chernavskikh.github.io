@@ -40,10 +40,11 @@
 		}
 		.navbar-form{
 			float: none;
-			.input-group{
-			padding: 10px 35px;
-			}
-
+				.input-group{
+				width: 60%;
+				min-width: 320px;
+				margin: 0 auto;
+				}
 		}
 		
 	}
@@ -69,6 +70,14 @@
 			a{
 				line-height: 2em;
 			}
+			.input-group{
+				width: 60%;
+				min-width: 320px;
+				margin: 0 auto;
+			}
+			.mail-form{
+				width: 100%;
+			}
  		}
  		.news-section{
  			h3{
@@ -77,10 +86,33 @@
  			}
  			article{
  				padding-left: none!important;
- 				img{
- 					margin: 0 10px 10px 0;
- 				}
+ 				padding-right: 15px!important;
+	 				img{
+	 					margin: 0 10px 10px 0!important;
+	 				}
+	 				h2{
+	 					font-size: 17px;
+
+	 				}
  			}
  		}
+	}
+	.footer-wrapper{
+		height: 100%;
+		padding-bottom: 30px;
+		text-align: center;
+		footer{
+			.first-center-list,.second-center-list{
+				float: inherit;
+				width: 100%;
+			}
+		.footer-form{
+			.input-group{
+			width: 60%;
+			min-width: 320px;
+			margin: 0 auto;
+			}
+		}
+		}
 	}
 }
