@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, p, span, a {
+  margin: 0;
+  padding: 0; }
+
+.header-bg {
+  height: 714px;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-reapeat;
+  background-size: cover; }
+  .header-bg .header__logo--img {
+    margin-top: 25px; }
+  .header-bg .header__nav {
+    margin-top: 30px;
+    float: right; }
+    .header-bg .header__nav--link {
+      padding-left: 65px;
+      font-size: 14px;
+      font-family: "Open Sans Semibold";
+      color: rgba(255, 255, 255, 0.69);
+      line-height: 1.2; }
+  .header-bg .header__main {
+    margin-top: 220px;
+    text-align: center; }
+    .header-bg .header__main--h1 {
+      margin: 0;
+      font-size: 58px;
+      font-family: "Lora Bold";
+      color: white; }
+    .header-bg .header__main--text {
+      display: block;
+      margin: 50px 0 80px 0;
+      font-size: 25px;
+      font-family: "Open Sans Regular";
+      color: white; }
+    .header-bg .header__main--btn {
+      width: 323px;
+      height: 75px;
+      font-size: 25px;
+      font-family: "Open Sans Regular";
+      color: white;
+      border: none;
+      border-radius: 45px;
+      background-color: #00a5ff;
+      box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25); }
+
+.services-wrapper {
+  width: 100%;
+  background-color: white;
+  padding: 75px 0 120px 0; }
+  .services-wrapper .services__header {
+    text-align: center;
+    margin-bottom: 115px; }
+    .services-wrapper .services__header--h2 {
+      font-size: 42px;
+      font-family: "Lora Bold";
+      color: #3a3f4b; }
+    .services-wrapper .services__header--line {
+      display: inline-block;
+      width: 147px;
+      height: 4px;
+      background-color: #00a5ff; }
+  .services-wrapper .services__block {
+    text-align: center; }
+    .services-wrapper .services__block--icon {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      background-image: url("../img/icons-sprite.png");
+      background-position: 0 0;
+      background-repeat: no-repeat; }
+    .services-wrapper .services__block .icon2 {
+      background-position: -89px 0; }
+    .services-wrapper .services__block .icon3 {
+      background-position: -177px 0; }
+    .services-wrapper .services__block .icon4 {
+      background-position: -262px 0; }
+    .services-wrapper .services__block--header {
+      display: block;
+      height: 50px;
+      font-size: 18px;
+      font-family: "Source Sans Pro Semibold";
+      color: #3a3f4b;
+      text-transform: uppercase;
+      line-height: 50px; }
+    .services-wrapper .services__block--line {
+      display: block;
+      width: 35px;
+      height: 3px;
+      margin: 0 auto;
+      background-color: #6a6a6a; }
+    .services-wrapper .services__block--text {
+      padding-top: 17px;
+      font-size: 12px;
+      font-family: "Open Sans Light";
+      color: #999999;
+      line-height: 1.6; }
+
+.portfolio-wrapper {
+  width: 100%;
+  margin-bottom: 145px; }
+  .portfolio-wrapper .portfolio {
+    text-align: center; }
+    .portfolio-wrapper .portfolio__header--h2 {
+      font-size: 42px;
+      font-family: "Lora Bold";
+      color: #3a3f4b; }
+    .portfolio-wrapper .portfolio__header--line {
+      display: inline-block;
+      width: 147px;
+      height: 4px;
+      background-color: #00a5ff; }
+    .portfolio-wrapper .portfolio__nav {
+      height: 60px; }
+      .portfolio-wrapper .portfolio__nav--link {
+        padding: 60px 25px;
+        font-size: 14px;
+        font-family: "Open Sans Regular";
+        color: #999999;
+        line-height: 60px; }
+      .portfolio-wrapper .portfolio__nav--link:hover {
+        color: #00a5ff; }
+    .portfolio-wrapper .portfolio__figure {
+      width: 100%;
+      height: 360px;
+      margin: 0 auto 15px;
+      box-shadow: 0px 2px 6px 1px #b8b6b6; }
+      .portfolio-wrapper .portfolio__figure--img {
+        width: 100%; }
+      .portfolio-wrapper .portfolio__figure--text {
+        height: 75px;
+        padding: 0 35px;
+        text-align: left;
+        font-size: 18px;
+        font-family: "Open Sans Semibold";
+        color: #999999;
+        line-height: 70px;
+        background-color: #f4f5f9; }
+    .portfolio-wrapper .portfolio__btn {
+      width: 280px;
+      height: 63px;
+      margin-top: 60px;
+      font-size: 25px;
+      font-family: "Open Sans Regular";
+      color: white;
+      border: none;
+      border-radius: 45px;
+      background-color: #00a5ff;
+      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25); }
+
+.brands {
+  margin-bottom: 190px; }
+  .brands__header {
+    margin-bottom: 70px; }
+    .brands__header--h2 {
+      font-size: 42px;
+      font-family: "Lora Bold";
+      color: #3a3f4b; }
+    .brands__header--line {
+      display: inline-block;
+      width: 147px;
+      height: 4px;
+      background-color: #00a5ff; }
+  .brands__nav--link {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-image: url("../img/brands-sprite.png");
+    background-position: 10px -103px;
+    background-repeat: no-repeat; }
+  .brands__nav .brand2 {
+    background-position: -185px -103px; }
+  .brands__nav .brand3 {
+    background-position: -405px -103px; }
+  .brands__nav .brand4 {
+    background-position: -620px -103px; }
+  .brands__nav .brand5 {
+    background-position: -825px -103px; }
+  .brands__nav .brand6 {
+    background-position: -1025px -103px; }
+  .brands__nav .brand1:hover {
+    background-position: 10px 0; }
+  .brands__nav .brand2:hover {
+    background-position: -185px 0; }
+  .brands__nav .brand3:hover {
+    background-position: -405px 0; }
+  .brands__nav .brand4:hover {
+    background-position: -620px 0; }
+  .brands__nav .brand5:hover {
+    background-position: -825px 0; }
+  .brands__nav .brand6:hover {
+    background-position: -1025px 0; }
+
+.about-us-wrapper {
+  width: 100%;
+  background-color: #f5f6f8; }
+  .about-us-wrapper .about-us__header--h2 {
+    font-size: 42px;
+    font-family: "Lora Bold";
+    color: #3a3f4b; }
+  .about-us-wrapper .about-us__header--line {
+    display: inline-block;
+    width: 147px;
+    height: 4px;
+    background-color: #00a5ff; }
