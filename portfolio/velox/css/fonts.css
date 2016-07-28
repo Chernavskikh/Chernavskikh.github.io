@@ -1,0 +1,80 @@
+/*Open Sans Regular*/
+@font-face {
+        font-family: 'Open Sans Regular';
+        src: url('../fonts/opensans.eot');
+        src: url('../fonts/opensans.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/opensans.woff') format('woff'),
+             url('../fonts/opensans.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+/*Open Sans Semibold*/
+@font-face {
+        font-family: 'Open Sans Semibold';
+        src: url('../fonts/opensanssemibold.eot');
+        src: url('../fonts/opensanssemibold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/opensanssemibold.woff') format('woff'),
+             url('../fonts/opensanssemibold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+}
+/*Open Sans Light*/
+@font-face {
+        font-family: 'Open Sans Light';
+        src: url('../fonts/opensanslight.eot');
+        src: url('../fonts/opensanslight.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/opensanslight.woff') format('woff'),
+             url('../fonts/opensanslight.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+}
+/*Lora Regular*/
+@font-face {
+        font-family: 'Lora';
+        src: url('../fonts/lora.eot');
+        src: url('../fonts/lora.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/lora.woff') format('woff'),
+             url('../fonts/lora.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+/*Lora Bold*/
+@font-face {
+        font-family: 'Lora Bold';
+        src: url('../fonts/lorabold.eot');
+        src: url('../fonts/lorabold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/lorabold.woff') format('woff'),
+             url('../fonts/lorabold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+}
+/*Source Sans Semibold Pro*/
+@font-face {
+        font-family: 'Source Sans Pro Semibold';
+        src: url('../fonts/sourcesansprosemibold.eot');
+        src: url('../fonts/sourcesansprosemibold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/sourcesansprosemibold.woff') format('woff'),
+             url('../fonts/sourcesansprosemibold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+}
+/*Montserrat Regular*/
+@font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/montserrat.eot');
+        src: url('../fonts/montserrat.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/montserrat.woff') format('woff'),
+             url('../fonts/montserrat.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+/*Roboto light*/
+@font-face {
+        font-family: 'Roboto Light';
+        src: url('../fonts/robotolight.eot');
+        src: url('../fonts/robotolight.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/robotolight.woff') format('woff'),
+             url('../fonts/robotolight.ttf') format('truetype');
+        font-weight: light;
+        font-style: normal;
+}
