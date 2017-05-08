@@ -27,7 +27,6 @@
 
     <div id="fullpage">
         <div class="section section-one">
-
             <div class="section-name">
                 <div class="section-name__title">ИССЛЕДУЙТЕ</div>
                 <div class="section-name__number">
@@ -134,7 +133,7 @@
                 </div> 
             </div>
 
-            <h2 class="section__title section__title--section-two">
+            <h2 class="section__title">
                 Решения
                 <span>inoiTech</span>
             </h2>
@@ -235,7 +234,7 @@
                 </div> 
             </div>
 
-            <h2 class="section__title section__title--section-two">
+            <h2 class="section__title section__title--section-four">
                 Инфраструктура
                 <span>inoiTech</span>
             </h2>
@@ -375,15 +374,73 @@
             </div>
         </div>
 
-<!--         <div class="section section-five">
+        <!-- <div class="section section-five">
             <h2 class="section__title section__title--section-two">
                 Опции
                 <span>inoiTech</span>
             </h2>
-        </div>
+        </div> -->
 
         <div class="section section-six">
-        </div> -->
+
+            <div class="section-name">
+                <div class="section-name__title">КОНТАКТЫ</div>
+                <div class="section-name__number">
+                    <span class="line"></span>
+                    <span>0</span>
+                    <span>6</span>
+                </div> 
+            </div>
+
+            <div class="section__content section__content--six">
+                <div class="contact-link">
+                    <div class="contact-link__object">
+                        <img src="img/map-icon.png" alt="">
+                    </div>
+                    <div class="contact-link__item">
+                        <p>
+                            НАХОДИМСЯ
+                        </p>
+                        <p>
+                            Kabelweg, 48a
+                            <br>Amsterdam 1014 BB NL
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-link">
+                    <div class="contact-link__object">
+                        <img src="img/mail-icon.png" alt="">
+                    </div>
+                    <div class="contact-link__item">
+                        <p>
+                            НАПИСАТЬ
+                        </p>
+                        <p>
+                            <a href="mailto:info@inotech.eu">info@inotech.eu</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-link">
+                    <div class="contact-link__object">
+                        <img src="img/contact-icon.png" alt="">
+                    </div>
+                    <div class="contact-link__item">
+                        <p>ПОЗВОНИТЬ</p>
+                        <p>
+                            Амстердам
+                            <br>+31 6246 0 5657
+                            <br>Киев
+                            <br>+38066 37 37 338
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy">
+                <a href="##">Политика конфиденциальности</a>
+                <span>2017 inoiTech All rights reserved</span>
+            </div>
+        </div>
     </div>
 
     <ul id="myMenu" class="nav-menu">
@@ -456,6 +513,12 @@
 
                 $('#fullpage').fullpage({
                     navigation: true,
+                     afterLoad: function(anchorLink, index){
+                        setTimeout(function(){
+                            $('.section-one').toggleClass('animate');
+                        },5);
+                       
+                    },
                     verticalCentered: true,
                     // scrollOverflow: true,
                     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage', 'sixPage'],
