@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="node_modules/fullpage.js/dist/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="../node_modules/fullpage.js/dist/jquery.fullpage.min.css">
     <link rel="icon" type="image/png" href="img/icon.ico">
 </head>
 <body>
@@ -27,6 +27,10 @@
 
     <div id="fullpage">
         <div class="section section-one">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+
             <div class="section-name">
                 <div class="section-name__title">ИССЛЕДУЙТЕ</div>
                 <div class="section-name__number">
@@ -56,6 +60,9 @@
         </div>
 
         <div class="section section-two">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
             <div class="section-name">
                 <div class="section-name__title">ВОЗМОЖНОСТИ</div>
                 <div class="section-name__number">
@@ -124,6 +131,10 @@
         </div>
 
         <div class="section section-three">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+
             <div class="section-name">
                 <div class="section-name__title">РЕШЕНИЯ</div>
                 <div class="section-name__number">
@@ -225,6 +236,10 @@
         </div>
 
         <div class="section section-four">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+
             <div class="section-name">
                 <div class="section-name__title">СТРУКТУРА</div>
                 <div class="section-name__number">
@@ -382,6 +397,9 @@
         </div> -->
 
         <div class="section section-six">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
 
             <div class="section-name">
                 <div class="section-name__title">КОНТАКТЫ</div>
@@ -499,9 +517,9 @@
         </div>
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/scroll-overflow.js"></script>
-    <script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script src="js/scrollClass.js"></script>
 
     <script>
         var fullPageCreated = false;
@@ -544,6 +562,16 @@
                     $.fn.fullpage.destroy('all');
                 }
             }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+          var mark = $('.line').closest('.section').innerHeight();
+          console.log(mark);
+          
+          $('.line').css('height', '+=' + mark);
         });
     </script>
 </body>
