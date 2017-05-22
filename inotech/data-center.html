@@ -40,7 +40,7 @@
                 </div> 
             </div>
 
-           <div class="section__content">
+           <div class="section__content section__content--section-one">
                 <img src="img/logo2.png" alt="">
                 <h1 class="section__title section__title--section-one">Безопасные решения для вашего бизнеса</h1>
                 <div class="builder-wrapper">
@@ -89,36 +89,38 @@
                 <div class="data-center-info">
                     <div class="data-center-info__item">
                         <div class="text-group">
-                            <h4 class="text-group__title">TIER3+DATA CENTER</h4>
-                            <p class="text-group__body">
-                                Высшая категория структуры
-                                и работы центра
-                                обаботки данных
-                            </p>
-                        </div>
-                        <div class="border-block"></div>
-                        <img src="img/data-center-icon.svg" alt="">
-                    </div>
-                    <div class="data-center-info__item">
-                        <div class="text-group">
                             <h4 class="text-group__title">ТЕХНОЛОГИЯ</h4>
                             <p class="text-group__body">
                                 Технология балансировки
-                                нагрузки - аппаратная 
-                                или программная
+                                <br>нагрузки - аппаратная 
+                                <br>или программная
                             </p>
                         </div>
                         <div class="border-block"></div>
                         <img src="img/technology-icon.svg" alt="">
                     </div>
+
+                    <div class="data-center-info__item">
+                        <div class="text-group">
+                            <h4 class="text-group__title">TIER3+DATA CENTER</h4>
+                            <p class="text-group__body">
+                                Высшая категория структуры
+                                <br>и работы центра
+                                <br>обаботки данных
+                            </p>
+                        </div>
+                        <div class="border-block"></div>
+                        <img src="img/data-center-icon.svg" alt="">
+                    </div>
+
                     <div class="data-center-info__item">
                         <div class="text-group">
                             <h4 class="text-group__title">БЕЗПЕРЕБОЙНЫЙ
                             <br>ДОСТУП</h4>
                             <p class="text-group__body">
                                 Воможность обслуживания
-                                без остановки рабочего
-                                процесса
+                                <br>без остановки рабочего
+                                <br>процесса
                             </p>
                         </div>
                         <div class="border-block"></div>
@@ -236,6 +238,14 @@
         </div>
 
         <div class="section section-four" id="sectionFour">
+            <div class="full-line">
+                <div class="full-line__border"></div>
+            </div>
+            
+            <div class="full-line">
+                <div class="full-line__border"></div>
+            </div>
+
             <div class="line-box">
                 <div class="line-draw"></div>
             </div>
@@ -639,13 +649,12 @@
             }
         }
       
-        if(document.documentElement.clientWidth < 992) {
+        if(document.documentElement.clientWidth < 1024) {
             $.fn.fullpage.destroy('all');
         }
 
         $(window).resize(function() {
-            //moblie width change 992
-            if ($(window).width() > 992) {
+            if ($(window).width() > 1024) {
                 createFullpage();
             } 
             else {
