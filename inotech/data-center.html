@@ -26,7 +26,7 @@
     </header>
 
     <div id="fullpage">
-        <div class="section section-one" id="sectionOne">
+        <div class="section section-one" id="firstPage">
             <div class="line-box">
                 <div class="line-draw"></div>
             </div>
@@ -60,7 +60,7 @@
            </div>
         </div>
 
-        <div class="section section-two" id="sectionTwo">
+        <div class="section section-two" id="secondPage">
             <div class="line-box">
                 <div class="line-draw"></div>
             </div>
@@ -130,7 +130,7 @@
            </div>
         </div>
 
-        <div class="section section-three" id="sectionThree">
+        <div class="section section-three" id="thirdPage">
             <div class="line-box">
                 <div class="line-draw"></div>
             </div>
@@ -237,7 +237,7 @@
             </div>
         </div>
 
-        <div class="section section-four" id="sectionFour">
+        <div class="section section-four" id="fourthPage">
 
             <div class="line-box">
                 <div class="line-draw"></div>
@@ -392,7 +392,7 @@
            </div>
         </div>
 
-        <div class="section section-five" id="sectionFive">
+        <div class="section section-five" id="fivePage">
             <div class="line-box">
                 <div class="line-draw"></div>
             </div>
@@ -479,7 +479,7 @@
             </div>
         </div>
 
-        <div class="section section-six" id="sectionSix">
+        <div class="section section-six" id="sixPage">
             <div class="line-box">
                 <div class="line-draw"></div>
             </div>
@@ -546,44 +546,44 @@
         </div>
     </div>
 
-    <ul id="myMenu" class="nav-menu">
-        <li data-menuanchor="firstPage" class="active">
-            <a href="#firstPage">
+    <ul id="menu" class="nav-menu">
+        <li data-menuanchor="section1" class="active">
+            <a href="#section1">
                 <svg width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 10L2 1h11z" stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                 </svg>
             </a>
         </li>
-        <li data-menuanchor="secondPage">
-            <a href="#secondPage">
+        <li data-menuanchor="section2">
+            <a href="#section2">
                 <svg width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 10L2 1h11z" stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                 </svg>
             </a>
         </li>
-        <li data-menuanchor="thirdPage">
-            <a href="#thirdPage">
-                 <svg width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.5 10L2 1h11z" stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"/>
-                </svg>
-            </a>
-        </li>
-        <li data-menuanchor="fourthPage">
-            <a href="#fourthPage">
+        <li data-menuanchor="section3">
+            <a href="#section3">
                 <svg width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 10L2 1h11z" stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                 </svg>
             </a>
         </li>
-        <li data-menuanchor="fivePage">
-            <a href="#fivePage">
+        <li data-menuanchor="section4">
+            <a href="#section4">
                 <svg width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 10L2 1h11z" stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                 </svg>
             </a>
         </li>
-        <li data-menuanchor="sixPage">
-            <a href="#sixPage">
+        <li data-menuanchor="section5">
+            <a href="#section5">
+                <svg width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 10L2 1h11z" stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+                </svg>
+            </a>
+        </li>
+        <li data-menuanchor="section6">
+            <a href="#section6">
                 <svg width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 10L2 1h11z" stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"/>
                 </svg>
@@ -603,19 +603,36 @@
     </footer>
 
     <!-- TOGGLE MENU -->
-
     <div class="menu">
-        <span class="btn btn-cross btn-close-menu">
+        <span role="button" class="btn btn-cross btn-close-menu">
             <span></span>
             <span></span>
         </span>
-        <ul class="menu-nav">
-            <li class="menu-nav__item"><a href="#sectionOne">ИССЛЕДУЙТЕ</a></li>
-            <li class="menu-nav__item"><a href="#sectionTwo">ВОЗМОЖНОСТИ</a></li>
-            <li class="menu-nav__item"><a href="#sectionThree">РЕШЕНИЯ</a></li>
-            <li class="menu-nav__item"><a href="#sectionFour">ИНФРАСТРУКТУРА</a></li>
-            <li class="menu-nav__item"><a href="#sectionFive">ПАКЕТЫ</a></li>
-            <li class="menu-nav__item"><a href="#sectionSix">КОНТАКТЫ</a></li>
+        <!--MENU WORKED WITH FULLPAGE ANCHORS-->
+        <ul class="menu-nav menu-nav--visible-lg">
+            <li class="menu-nav__item" data-menuanchor="section1"><a href="#section1">ИССЛЕДУЙТЕ</a></li>
+            <li class="menu-nav__item" data-menuanchor="section2"><a href="#section2">ВОЗМОЖНОСТИ</a></li>
+            <li class="menu-nav__item" data-menuanchor="section3"><a href="#section3">РЕШЕНИЯ</a></li>
+            <li class="menu-nav__item" data-menuanchor="section4"><a href="#section4">ИНФРАСТРУКТУРА</a></li>
+            <li class="menu-nav__item" data-menuanchor="section5"><a href="#section5">ОПЦИИ</a></li>
+            <li class="menu-nav__item" data-menuanchor="section6"><a href="#section6">КОНТАКТЫ</a></li>
+        </ul>
+        <!--MENU WORKED WITH NORMAL HREF-->
+        <ul class="menu-nav menu-nav--visible-xs">
+            <li class="menu-nav__item"><a href="#firstPage">ИССЛЕДУЙТЕ</a></li>
+            <li class="menu-nav__item"><a href="#secondPage">ВОЗМОЖНОСТИ</a></li>
+            <li class="menu-nav__item"><a href="#thirdPage">РЕШЕНИЯ</a></li>
+            <li class="menu-nav__item"><a href="#fourthPage">ИНФРАСТРУКТУРА</a></li>
+            <li class="menu-nav__item"><a href="#fivePage">ОПЦИИ</a></li>
+            <li class="menu-nav__item"><a href="#sixPage">КОНТАКТЫ</a></li>
+            <li class="menu-nav__item">
+                <ul class="inner-menu">
+                    <li><a href="data-center.html">РУССКИЙ</a></li>
+                    <li><a href="data-center-en.html">ENGLISH</a></li>
+                    <li><a href="data-center-nl.html">NEDERLANDS</a></li>
+                </ul>
+            </li>
+            <li class="menu-nav__item"><a href="">КЛИЕНТСКИЙ ПОРТАЛ</a></li>
         </ul>
     </div>
 
@@ -762,20 +779,19 @@
         createFullpage();
 
         function createFullpage() {
-            if(fullPageCreated === false) {
+            if (fullPageCreated === false) {
                 fullPageCreated = true;
 
                 $('#fullpage').fullpage({
-                    navigation: true,
                     verticalCentered: true,
-                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage', 'sixPage'],
-                    menu: '#myMenu',
+                    anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
+                    menu: '#menu',
                     navigation: false
                 });
             }
         }
       
-        if(document.documentElement.clientWidth < 1024) {
+        if (document.documentElement.clientWidth < 1024) {
             $.fn.fullpage.destroy('all');
         }
 
@@ -793,33 +809,40 @@
     </script>
 
     <script>
+        //hamburger menu toggle functions
         $('.btn-toggle-menu').click(function() {
-            $(this).toggleClass('toggled');
-            $('.menu').toggleClass('open');
-            $('body').toggleClass('menu-open');
+            $(this).addClass('toggled');
+            $('.menu').addClass('open');
+            $('html, body').addClass('menu-open');
+            $.fn.fullpage.setAllowScrolling(false);
         });
 
-        $('.menu-nav__item, .btn-close-menu').click(function(e) {
-            $('.menu').toggleClass('open');
+        $('.menu-nav__item, .btn-close-menu').click(function() {
+            $('.menu').removeClass('open');
             $('.btn-toggle-menu').removeClass('toggled');
-            $('body').removeClass('menu-open');
+            $('html, body').removeClass('menu-open');
+            $.fn.fullpage.setAllowScrolling(true);
         });
 
-        $('.toggle-agreements').click(function(e) {
+        //agreements toggle functions
+        $('.toggle-agreements, .btn-close-agreements').click(function(e) {
             event.preventDefault();
             $('.agreement-page').addClass('open');
-            $('body').addClass('menu-open');
+            $('body, html').addClass('menu-open');
+            $.fn.fullpage.setAllowScrolling(false);
         });
 
-        $('.btn-close-agreements').click(function() {
+        $('.btn-close-agreements').click(function(e) {
+            event.preventDefault();
             $('.agreement-page').removeClass('open');
-            $('body').removeClass('menu-open');
+            $('body, html').removeClass('menu-open');
+            $.fn.fullpage.setAllowScrolling(true);
         });
 
+        //calculate height of dashed line for animation
         $(window).on("load resize",function(e){
             var mark = $('.line').closest('.section').innerHeight();
-            console.log(mark);
-
+            // console.log(mark);
             $('.line-draw').css('height', '+=' + mark);
         });
 
