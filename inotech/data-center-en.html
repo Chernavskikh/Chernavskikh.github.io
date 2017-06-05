@@ -148,7 +148,7 @@
             <div class="section__content">
                 <h2 class="section__title">
                     SOLUTIONS
-                    <span>inoiTech</span>
+                    <span>inoiTECH</span>
                 </h2>
 
                 <div class="solution-content">
@@ -256,7 +256,7 @@
            <div class="section__content">
                 <h2 class="section__title section__title--section-four">
                     INFRASTRUCTURE 
-                    <span>inoiTech</span>
+                    <span>inoiTECH</span>
                 </h2>
 
                 <div class="info-section">
@@ -410,7 +410,7 @@
             <div class="section__content">
                 <h2 class="section__title section__title--five">
                     OPTIONS
-                    <span>inoiTech</span>
+                    <span>inoiTECH</span>
                 </h2>
 
                 <div class="options">
@@ -757,73 +757,6 @@
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/fullpage.js/dist/jquery.fullpage.min.js"></script>
-
-    <script>
-        var fullPageCreated = false;
-        createFullpage();
-
-        function createFullpage() {
-            if(fullPageCreated === false) {
-                fullPageCreated = true;
-
-                $('#fullpage').fullpage({
-                    navigation: true,
-                    verticalCentered: true,
-                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage', 'sixPage'],
-                    menu: '#myMenu',
-                    navigation: false
-                });
-            }
-        }
-      
-        if(document.documentElement.clientWidth < 1024) {
-            $.fn.fullpage.destroy('all');
-        }
-
-        $(window).resize(function() {
-            if ($(window).width() > 1024) {
-                createFullpage();
-            } 
-            else {
-                if(fullPageCreated == true) {
-                    fullPageCreated = false;
-                    $.fn.fullpage.destroy('all');
-                }
-            }
-        });
-    </script>
-
-    <script>
-        $('.btn-toggle-menu').click(function() {
-            $(this).toggleClass('toggled');
-            $('.menu').toggleClass('open');
-            $('body').toggleClass('menu-open');
-        });
-
-        $('.menu-nav__item, .btn-close-menu').click(function(e) {
-            $('.menu').toggleClass('open');
-            $('.btn-toggle-menu').removeClass('toggled');
-            $('body').removeClass('menu-open');
-        });
-
-        $('.toggle-agreements').click(function(e) {
-            event.preventDefault();
-            $('.agreement-page').addClass('open');
-            $('body').addClass('menu-open');
-        });
-
-        $('.btn-close-agreements').click(function() {
-            $('.agreement-page').removeClass('open');
-            $('body').removeClass('menu-open');
-        });
-
-        $(window).on("load resize",function(e){
-            var mark = $('.line').closest('.section').innerHeight();
-            console.log(mark);
-
-            $('.line-draw').css('height', '+=' + mark);
-        });
-
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
