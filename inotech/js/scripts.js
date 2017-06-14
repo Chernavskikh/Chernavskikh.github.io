@@ -1,1 +1,87 @@
-$(function(){function e(){!1===n&&(n=!0,$("#fullpage").fullpage({verticalCentered:!0,anchors:["section1","section2","section3","section4","section5","section6"],menu:"#menu",navigation:!1}))}var n=!1;e(),document.documentElement.clientWidth<1024&&$.fn.fullpage.destroy("all"),$(window).resize(function(){$(window).width()>1024?e():1==n&&(n=!1,$.fn.fullpage.destroy("all"))})}),$(".btn-toggle-menu").click(function(){$(this).addClass("toggled"),$(".menu").addClass("open"),$("html, body").addClass("menu-open"),$.fn.fullpage.setAllowScrolling(!1)}),$(".menu-nav__item, .btn-close-menu").click(function(){$(".menu").removeClass("open"),$(".btn-toggle-menu").removeClass("toggled"),$("html, body").removeClass("menu-open"),$.fn.fullpage.setAllowScrolling(!0)}),$(".toggle-agreements, .btn-close-agreements").click(function(e){event.preventDefault(),$(".agreement-page").addClass("open"),$("body, html").addClass("menu-open"),$.fn.fullpage.setAllowScrolling(!1)}),$(".btn-close-agreements").click(function(e){event.preventDefault(),$(".agreement-page").removeClass("open"),$("body, html").removeClass("menu-open"),$.fn.fullpage.setAllowScrolling(!0)}),$(window).on("load resize",function(e){var n=$(".line").closest(".section").innerHeight();$(".line-draw").css("height","+="+n)});
+$(function() {
+    var fullPageCreated = false;
+        createFullpage();
+
+    function createFullpage() {
+        if (fullPageCreated === false) {
+            fullPageCreated = true;
+
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
+                menu: '#menu',
+                navigation: false
+            });
+        }
+    }
+
+    if (document.documentElement.clientWidth < 1024) {
+        $.fn.fullpage.destroy('all');
+    }
+
+    $(window).resize(function() {
+        if ($(window).width() > 1024) {
+            createFullpage();
+
+        } 
+        else {
+            if(fullPageCreated == true) {
+                fullPageCreated = false;
+                $.fn.fullpage.destroy('all');
+            }
+        }
+    });
+
+});
+
+//hamburger menu toggle functions
+    $('.btn-toggle-menu').click(function() {
+        $(this).addClass('toggled');
+        $('.menu').addClass('open');
+        $('html, body').addClass('menu-open');
+        $.fn.fullpage.setAllowScrolling(false);
+    });
+
+    $('.menu-nav__item, .btn-close-menu').click(function() {
+        $('.menu').removeClass('open');
+        $('.btn-toggle-menu').removeClass('toggled');
+        $('html, body').removeClass('menu-open');
+        $.fn.fullpage.setAllowScrolling(true);
+    });
+
+    $(document).ready(function(){
+        if ($(window).width() < 1024) {
+            $('a[href*=\\#]').on('click', function(event){     
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500); 
+            });
+        }
+        else if ($(window).width() < 768) {
+            $('a[href*=\\#]').on('click', function(event){     
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 500); 
+            });
+        }
+    });
+
+    //agreements toggle functions
+    $('.toggle-agreements, .btn-close-agreements').click(function(e) {
+        event.preventDefault();
+        $('.agreement-page').addClass('open');
+        $('body, html').addClass('menu-open');
+        $.fn.fullpage.setAllowScrolling(false);
+    });
+
+    $('.btn-close-agreements').click(function(e) {
+        event.preventDefault();
+        $('.agreement-page').removeClass('open');
+        $('body, html').removeClass('menu-open');
+        $.fn.fullpage.setAllowScrolling(true);
+    });
+
+    //calculate height of dashed line for animation
+    $(window).on("load resize",function(e){
+        var mark = $('.line').closest('.section').innerHeight();
+        // console.log(mark);
+        $('.line-draw').css('height', '+=' + mark);
+    });
