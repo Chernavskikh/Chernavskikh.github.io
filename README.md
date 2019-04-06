@@ -1,1 +1,1 @@
-# Chernavskikh.github.io demo pages
+# chernavskikh.github.io demo pages
